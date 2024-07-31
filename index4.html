@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={a:1,b:null}            //checking array elements 
+        console.log(obj.c===undefined)
+        console.log(obj.b==54)
+
+        let index=[11,9,11,8,10,11,45,36,11]  //finding index of first occurence
+        let index1=index.indexOf(11)
+        console.log(index1)
+
+        function rotate(arr,n){             //rotate an array
+            return arr.slice(n).concat(arr.shift(0,n));
+        }
+        const arr=[1,2,3,4,5];
+        console.log(rotate(arr))
+     
+        let fruits=['apple','orange','grapes','banana']  //inserting items at specific place
+        fruits.splice(2,0,'mango')
+        console.log(fruits)
+
+        let eswaran=['priya','suba']     //longest string in an  array
+        let string=eswaran.reduce((a,b)=>a.length>b.length?a:b);
+        console.log(string)
+        
+    </script>
+</body>
+</html>
